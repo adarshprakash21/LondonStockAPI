@@ -65,6 +65,7 @@ REST API serves with different endpoints to excecute trades, get stock values, g
 
 
 ## Architecture
+<img width="781" height="601" alt="LondonStockAPIArchitecture drawio" src="https://github.com/user-attachments/assets/e055bb3e-c552-421f-8ea7-d6b43028468e" />
 
 
 ## Optimizations
