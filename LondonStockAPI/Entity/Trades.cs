@@ -8,5 +8,7 @@
         public decimal Shares { get; set; }
         public int BrokerId { get; set; }
         public DateTime TradedOn { get; set; } = DateTime.UtcNow;
+        public Stocks Stocks { get; set; }
+        public Broker Broker { get; set; }
     }
 }

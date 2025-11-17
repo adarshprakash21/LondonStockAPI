@@ -26,6 +26,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "LondonStockAPI", Version = "v1" });
+    c.AddSecurityDefinition("JWT", new OpenApiSecurityScheme
+    {
+        Description = "using bearer token",
+        In = ParameterLocation.Header,
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        BearerFormat = "JWT",
+        Scheme = JwtBearerDefaults.AuthenticationScheme,
+    });
 });
 
 builder.Services.AddAuthentication(options =>
